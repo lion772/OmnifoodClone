@@ -1,0 +1,294 @@
+/*
+Orange color: #e67e22
+
+*/
+
+/*--------------------------------------------------------*/
+/*         Basic Setup*/
+/*--------------------------------------------------------*/
+
+header {
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  background-color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/*-------------------------------------------------------*/
+/*                 Reusable Components
+/*-------------------------------------------------------*/
+
+.clear {
+  clear: both;
+}
+
+/*-------------------------------------------------------*/
+/*                     Paragraphs
+/*-------------------------------------------------------*/
+
+p {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+/*-------------------------------------------------------*/
+/*                      Headings
+/*-------------------------------------------------------*/
+
+h1 {
+  color: #fff;
+  word-spacing: 1px;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 260%;
+  font-weight: 10;
+  text-transform: uppercase;
+}
+
+h2 {
+  word-spacing: 1px;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: 10;
+  font-size: 170%;
+  text-transform: uppercase;
+}
+
+.h2-formater {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h2:after {
+  content: " ";
+  display: inline-block;
+  border-top: 2px #e67e22 solid;
+  width: 16%;
+  transform: translate(-5%);
+}
+
+h3 {
+  font-weight: 10;
+  font-size: 130%;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+/*-------------------------------------------------------*/
+/*                      Buttons
+/*-------------------------------------------------------*/
+
+.btn {
+  margin-top: 16px;
+  transform: translate(-6%, 10%);
+}
+
+.btn a {
+  margin: 0;
+  border-radius: 50px;
+  border: 1px #db9411 solid;
+  margin-right: 30px;
+  padding: 10px 30px 10px 30px;
+}
+
+.btn-full {
+  background-color: #e67e22;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-ghost {
+  text-decoration: none;
+  color: #db9411;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: rgba(230, 126, 34, 0.8);
+  color: #dddddd;
+  border: 1px #e67e22 solid;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #dddddd;
+  background-color: rgba(230, 126, 34, 0.8);
+  border: 1px rgba(230, 126, 34, 0.8) solid;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+/*-------------------------------------------------------*/
+/*                      Header*/
+/*-------------------------------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url(img/Omnifood-contents/1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#first-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -40%);
+  width: 60%;
+}
+
+.nav-items {
+  list-style: none;
+  float: right;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 50px;
+}
+
+.list-nav {
+  float: left;
+  margin-right: 30px;
+  font-size: 130%;
+}
+
+nav img {
+  width: 120px;
+  margin: 20px 40px;
+}
+
+.nav-items a {
+  border-bottom: 1px transparent solid;
+  color: white;
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 10;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.nav-items li {
+  border-bottom: 2px transparent solid;
+}
+
+.nav-items li:hover {
+  border-bottom: 2px #e67e22 solid;
+  transition: border-bottom 0.5s;
+}
+
+/*-------------------------------------------------------*/
+/*                      Meals*/
+/*-------------------------------------------------------*/
+
+.long-copy {
+  padding: 10px 100px;
+  font-size: 90%;
+  margin-bottom: 30px;
+}
+
+.meal-columns {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.meal-paragraph-format {
+  text-align: start;
+  font-size: 90%;
+}
+
+ion-icon {
+  font-size: 60px;
+  padding-right: 180px;
+  margin: 1px;
+  color: #e67e22;
+  text-align: left;
+}
+
+.img-row-meals {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.meal-photo {
+  width: 25%;
+  overflow: hidden;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.meal-photo img {
+  opacity: 1;
+  width: 100%;
+  transform: scale(1.15);
+  height: auto;
+  height: auto;
+}
+
+.meal-photo img:hover {
+  opacity: 0.95;
+  transform: scale(1.03);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/*-------------------------------------------------------*/
+/*                      Places*/
+/*-------------------------------------------------------*/
+
+.section-places {
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.container-places {
+  width: 100%;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.show-places {
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+
+.show-places img {
+  width: 100%;
+}
+
+.show-places li {
+  list-style: none;
+}
+
+.place-contents {
+  width: 100%;
+  text-align: left;
+  margin-top: 14px;
+}
+
+.place-icons {
+  float: left;
+  font-size: 100% !important;
+  position: relative;
+  left: -30px;
+  top: 26px;
+}
