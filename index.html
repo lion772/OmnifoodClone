@@ -10,7 +10,7 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-
+    <script type="text/javascript" src="jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style2.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
@@ -23,10 +23,7 @@
   <body>
     <header>
       <nav>
-        <img
-          src="img/Omnifood-contents/logo-white.png"
-          alt="logo"
-        />
+        <img src="img/Omnifood-contents/logo-white.png" alt="logo" />
 
         <ul class="nav-items">
           <a href="#">
@@ -115,16 +112,32 @@
       <div class="row">
         <div class="img-row-meals">
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/1.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/1.jpg"
+              alt="Korean bibimbap with egg and vegetables"
+            />
           </figure>
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/2.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/2.jpg"
+              alt="Simple italian pizza with cherry tomatoes"
+            />
           </figure>
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/3.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/3.jpg"
+              alt="Chicken breast steak with vegetables"
+            />
           </figure>
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/4.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/4.jpg"
+              alt="Autumn pumpkin soup"
+            />
           </figure>
         </div>
       </div>
@@ -132,24 +145,44 @@
       <div class="row">
         <div class="img-row-meals">
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/5.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/5.jpg"
+              alt="Paleo beef steak with vegetables"
+            />
           </figure>
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/6.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/6.jpg"
+              alt="Healthy baguette with egg and vegetables"
+            />
           </figure>
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/7.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/7.jpg"
+              alt="Burger with cheddar and bacon"
+            />
           </figure>
           <figure class="meal-photo">
-            <img src="img/Omnifood-contents/8.jpg" alt="" />
+            <img
+              class="image-meals"
+              src="img/Omnifood-contents/8.jpg"
+              alt="Granola with cherries and strawberries"
+            />
           </figure>
         </div>
       </div>
     </section>
 
-    <div class="clearfix"></div>
+    <div id="myModal" class="modal">
+      <span class="close">×</span>
+      <img src="" class="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
 
-    <section class="container">
+    <section class="section-steps">
       <div class="howItWorks">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -191,7 +224,7 @@
 
       <div class="row">
         <div class="col-md-3 container-places">
-          <figure class="show-places">
+          <figure class="show-places toBottom">
             <img src="img/Omnifood-contents/berlin.jpg" alt="Berlin" />
             <div class="place-contents">
               <h3>Berlin</h3>
@@ -213,7 +246,7 @@
               </ul>
             </div>
           </figure>
-          <figure class="show-places">
+          <figure class="show-places toBottom">
             <img src="img/Omnifood-contents/lisbon-3.jpg" alt="Lisbon" />
             <div class="place-contents">
               <h3>Lisbon</h3>
@@ -236,8 +269,11 @@
             </div>
           </figure>
 
-          <figure class="show-places">
-            <img src="img/Omnifood-contents/san-francisco.jpg" alt="San Francisco" />
+          <figure class="show-places toBottom">
+            <img
+              src="img/Omnifood-contents/san-francisco.jpg"
+              alt="San Francisco"
+            />
             <div class="place-contents">
               <h3>San Francisco</h3>
               <ul>
@@ -258,7 +294,7 @@
               </ul>
             </div>
           </figure>
-          <figure class="show-places">
+          <figure class="show-places toBottom">
             <img src="img/Omnifood-contents/london.jpg" alt="London" />
             <div class="place-contents">
               <h3>London</h3>
@@ -283,5 +319,7 @@
         </div>
       </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
